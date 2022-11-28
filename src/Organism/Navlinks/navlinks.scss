@@ -1,0 +1,9 @@
+.wrap-navlinks{
+    display: flex;
+    justify-content: center;
+    transform: translateX(120px);
+
+    .navlinks{
+        list-style: none;
+    }
+}

@@ -1,0 +1,35 @@
+.btn-navlink::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    background-color: black;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    display: block;
+}
+.btn-navlink{
+    position: relative;
+    padding: 20px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    text-align: center;
+    height: auto;
+    color: darkgray;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    width: auto;
+    border: none;
+    outline: none;
+    background-color: #fff;
+}
+.reg{
+    color: orangered;
+}
+.activ{
+    &::after{
+        width: 100%;
+        transition: width 0.15s linear;
+    }
+    color: black;
+}
