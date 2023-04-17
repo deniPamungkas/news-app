@@ -1,0 +1,17 @@
+.j-karosel {
+    width: 800px;
+    height: 400px;
+    background-color: red;
+
+    .mySwiper {
+      height: 100%;
+      width: 100%;
+      background-color: #fff;
+
+      div {
+        height: 100%;
+        width: 300px;
+        background-color: grey;
+      }
+    }
+  }

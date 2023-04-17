@@ -1,18 +1,18 @@
 import { Routes, Route } from 'react-router-dom';
 import './App.scss';
-import Navbar from './Molekul/Navbar/navbar';
-import Home from './Pages/Home/home';
-import WC from './Pages/World Cup/wc';
+import { Beranda, Cari, Category, Footer, Navbar } from './component/allComps';
 
 function App() {
   
   return (
     <div className="App">
-      <Navbar/>
-      <Routes>
-        <Route path='/' exact element={<Home/>}/>
-        <Route path='/wc' element={<WC/>}/>
-      </Routes>
+        <Navbar/>
+        <Routes>
+          <Route exact path='/' element={<Beranda/>}/>
+          <Route path='/category/:category' element={<Category/>}/>
+          <Route path='/search/:search' element={<Cari/>}/>
+        </Routes>
+        <Footer/>
     </div>
   );
 }
