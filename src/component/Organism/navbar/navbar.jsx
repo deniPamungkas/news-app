@@ -14,7 +14,7 @@ const Navbar = () => {
   const handleSubmit=(e)=>{
     e.preventDefault()
     if(search !== ''){
-      navigate(`/search/${search}`)
+      navigate(`news-app/search/${search}`)
       setSearch('')
     }else{
       return null
@@ -33,7 +33,7 @@ const Navbar = () => {
           </form>
         </div>
         <div className="center">
-          <h1><Link to={'/'}>.PmngksNews</Link></h1>
+          <h1><Link to={'news-app/'}>.PmngksNews</Link></h1>
         </div>
         <div className="right">
           <span>
@@ -43,13 +43,13 @@ const Navbar = () => {
       </div>
       <div className="bottom">
         <ul>
-          <li><NavLink to="/category/business">Bussiness</NavLink></li>
-          <li><NavLink to="/category/sports">Sports</NavLink></li>
-          <li><NavLink to="/category/entertainment">Entertainments</NavLink></li>
-          <li><NavLink to="/category/politics">Politics</NavLink></li>
-          <li><NavLink to="/category/ScienceAndTechnology">Tech</NavLink></li>
-          <li><NavLink to="/category/uk">UK</NavLink></li>
-          <li><NavLink to="/category/world">World</NavLink></li>
+          <li><NavLink to="news-app/category/business">Bussiness</NavLink></li>
+          <li><NavLink to="news-app/category/sports">Sports</NavLink></li>
+          <li><NavLink to="news-app/category/entertainment">Entertainments</NavLink></li>
+          <li><NavLink to="news-app/category/politics">Politics</NavLink></li>
+          <li><NavLink to="news-app/category/ScienceAndTechnology">Tech</NavLink></li>
+          <li><NavLink to="news-app/category/uk">UK</NavLink></li>
+          <li><NavLink to="news-app/category/world">World</NavLink></li>
         </ul>
       </div>
     </nav>

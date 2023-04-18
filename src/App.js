@@ -8,9 +8,9 @@ function App() {
     <div className="App">
         <Navbar/>
         <Routes>
-          <Route exact path='/' element={<Beranda/>}/>
-          <Route path='/category/:category' element={<Category/>}/>
-          <Route path='/search/:search' element={<Cari/>}/>
+          <Route exact path='news-app/' element={<Beranda/>}/>
+          <Route path='news-app/category/:category' element={<Category/>}/>
+          <Route path='news-app/search/:search' element={<Cari/>}/>
         </Routes>
         <Footer/>
     </div>
